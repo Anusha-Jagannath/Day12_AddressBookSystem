@@ -5,9 +5,37 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AddressBookMain {
+	
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Address Book Program");
+		List<Contact> list = new ArrayList<>();
+		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
+		int choice;
+		System.out.println("1. Add\n 2.Edit\n3. delete\n4.Exit");
+		choice = sc.nextInt();
+		switch(choice) {
+		case 1: addContact();
+				break;
+		case 2:System.out.println("Enter name of person to edit");
+		String name = sc.nextLine();
+		Contact person = getperson(list,name);
+		
+		}
+		
+		
+	}
+
+	private static Contact getperson(List<Contact> list, String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static void addContact() {
+		List<Contact> list = new ArrayList<>();
+		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		String firstName;
 		String lastName;
 		String address;
@@ -16,9 +44,8 @@ public class AddressBookMain {
 		int zip;
 		int phoneNo;
 		String email;
-		Scanner sc = new Scanner(System.in);
-		Scanner scanner = new Scanner(System.in);
-		List<Contact> list = new ArrayList<>();
+		
+	
 
 		System.out.println("Enter first name");
 		firstName = sc.nextLine();
@@ -48,6 +75,7 @@ public class AddressBookMain {
 		list.add(contact);
 		System.out.println(contact);
 
+		
 	}
 
 }
