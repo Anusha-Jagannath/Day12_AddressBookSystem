@@ -22,12 +22,12 @@ public class Contact {
 		this.email = email;
 	}
 
-	public void displayContact() {
-		System.out.println("First name:"+this.firstName+"\nLast name:"+this.lastName+
-				"\nAddress:"+this.address+"\nCity:"+this.city+"\nstate:"+this.state
-				+"\nZip:"+this.zip+"\nPhone no:"+this.phoneNo+"\nemail:"+this.email);
-		
-
+	@Override
+	public String toString() {
+		return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
+				+ ", state=" + state + ", zip=" + zip + ", phoneNo=" + phoneNo + ", email=" + email + "]";
 	}
+
+	
 
 }
