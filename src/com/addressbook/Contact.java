@@ -1,5 +1,7 @@
 package com.addressbook;
 
+import java.util.List;
+
 public class Contact {
 	String firstName;
 	String lastName;
