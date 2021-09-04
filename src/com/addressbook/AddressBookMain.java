@@ -14,7 +14,7 @@ public class AddressBookMain {
 		Scanner sc = new Scanner(System.in);
 		Scanner scanner = new Scanner(System.in);
 		int choice;
-		System.out.println("1. Add\n2.Edit\n3. delete\n4.Exit");
+		System.out.println("1. Add\n2. Edit\n3. delete\n4. Exit");
 		choice = sc.nextInt();
 		switch(choice) {
 		case 1: addContact();
